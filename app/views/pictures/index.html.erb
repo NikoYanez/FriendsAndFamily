@@ -1,27 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Pictures</h1>
-<div >
-  <%= link_to 'Add New Picture', new_picture_path, class:'btn btn-default' %>
-</div>
+<h1>MIAMI LIFE</h1>
 
 
 <!-- <h3 class="titles">Title</h3> -->
 <h3 class="titles">Miami</h3>
-      <!-- <th colspan="3"></th> -->
+<!-- <th colspan="3"></th> -->
 
 <% @pictures.each do |picture| %>
-  <p id="picture-title"><%= picture.title %></p>
-  <%= image_tag picture.url %>
-          <ul>
-            <li><%= link_to 'Show', picture, class:'btn btn-default' %></li>
-            <li><%= link_to 'Edit', edit_picture_path(picture), class:'btn btn-default' %></li>
-            <li><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></li>
-          </ul>
-        <!-- <td><%= link_to 'Show', picture, class:'btn btn-default' %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture), class:'btn btn-default' %></td>
-        <td><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></td> -->
-    <% end %>
+<p id="picture-title"><%= picture.title %></p>
+<%= image_tag picture.url %>
+<div id="buttons">
+  <ul>
+    <li><%= link_to 'Show', picture, class:'btn btn-default' %></li>
+    <li><%= link_to 'Edit', edit_picture_path(picture), class:'btn btn-default' %></li>
+    <li><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></li>
+  </ul>
+</div>
+<!-- <td><%= link_to 'Show', picture, class:'btn btn-default' %></td>
+<td><%= link_to 'Edit', edit_picture_path(picture), class:'btn btn-default' %></td>
+<td><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></td> -->
+<% end %>
 <br>
 
+<div id="add-new">
+  <%= link_to 'Add New Picture', new_picture_path, class:'btn btn-success fa fa-plus-square fa-lg' %>
+</div>
 <!-- <%= link_to 'Add New Picture', new_picture_path, class:'btn btn-default' %> -->

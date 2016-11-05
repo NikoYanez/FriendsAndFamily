@@ -3,6 +3,11 @@
   They will automatically be included in application.css.
 */
 
+h1 {
+  text-align: center;
+}
+
+
 img {
   display: block;
   margin: auto;
@@ -16,11 +21,16 @@ ul {
   list-style-type: none;
 }
 
+/*************   BUTTONS   ******************/
 .btn-default {
   text-align: center;
 }
 
-td {
+.btn-success {
+  color: white;
+}
+
+#add-new {
   text-align: center;
 }
 
@@ -30,4 +40,13 @@ td {
 
 #picture-title {
   text-align: center;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#buttons ul {
+    display: inline-flex;
+    padding: 0;
 }
