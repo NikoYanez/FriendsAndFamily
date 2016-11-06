@@ -94,6 +94,7 @@ label {
 .picture-box {
   max-height: 200px;
   max-width: 300px;
+  background-color: white;
 }
 
 div.container {
