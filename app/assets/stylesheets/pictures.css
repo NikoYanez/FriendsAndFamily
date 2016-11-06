@@ -3,8 +3,16 @@
   They will automatically be included in application.css.
 */
 
+/***** BACKGROUNDS *****/
+
+
+html body {
+  background-color: #213b66;
+}
+
 h1 {
   text-align: center;
+  color: white;
 }
 
 
@@ -36,6 +44,7 @@ ul {
 
 .titles {
   text-align: center;
+  color: white;
 }
 
 #picture-title {
@@ -49,4 +58,16 @@ ul {
 #buttons ul {
     display: inline-flex;
     padding: 0;
+}
+
+label {
+  color: white;
+}
+
+.field {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
 }
