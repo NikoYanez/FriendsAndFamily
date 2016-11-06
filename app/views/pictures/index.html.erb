@@ -11,7 +11,7 @@
 
 
 <p id="picture-title"><%= picture.title %></p>
-<%= link_to picture.url, data: { lightbox: "image-1", title: "My caption" } do %>
+<%= link_to picture.url, data: { lightbox: "image-1", title: picture.title } do %>
   <%= image_tag picture.url %>
 <% end %>
 <div id="buttons">

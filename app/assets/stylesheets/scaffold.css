@@ -82,3 +82,12 @@ div.actions {
 label {
   display: block;
 }
+
+p {
+  text-align: center;
+}
+
+
+.btn-success a:visited a:hover {
+  color: #ffffff;
+}
