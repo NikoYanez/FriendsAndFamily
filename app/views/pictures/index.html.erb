@@ -7,9 +7,13 @@
 <h3 class="titles">Miami</h3>
 <!-- <th colspan="3"></th> -->
 
-<% @pictures.each do |picture| %>
+<% @pictures.each_with_index do |picture, index| %>
+
+
 <p id="picture-title"><%= picture.title %></p>
-<%= image_tag picture.url %>
+<%= link_to picture.url, data: { lightbox: "image-1", title: "My caption" } do %>
+  <%= image_tag picture.url %>
+<% end %>
 <div id="buttons">
   <ul>
     <li><%= link_to 'Show', picture, class:'btn btn-default' %></li>
