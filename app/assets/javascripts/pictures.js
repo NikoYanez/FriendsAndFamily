@@ -5,5 +5,5 @@ $(document).ready(function() {
   lightbox.option({
     // 'resizeDuration': 200,
     'alwaysShowNavOnTouchDevices': true
-  })
+  });
 });
