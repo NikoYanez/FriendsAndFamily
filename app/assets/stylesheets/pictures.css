@@ -5,9 +5,14 @@
 
 /***** BACKGROUNDS *****/
 
+.navbar-brand {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
 
 html body {
-  background-color: #213b66;
+  background: url('https://images.unsplash.com/photo-1477062325860-871562e227e6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=552d9ee350f2147789d44b6fb00f79c1');
+  background-size: cover;
 }
 
 h1 {
@@ -29,6 +34,7 @@ ul {
   list-style-type: none;
 }
 
+
 /*************   BUTTONS   ******************/
 .btn-default {
   text-align: center;
@@ -46,6 +52,7 @@ ul {
 .titles {
   text-align: center;
   color: white;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #picture-title {
@@ -74,12 +81,21 @@ label {
   text-align: center;
 }
 
-.row {
+.gallery-container {
   height: 100%;
-  width: 100%;
+  width: 110%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
 }
 
 .picture-box {
-  height: 15em;
-  padding-top: auto;
+  max-height: 200px;
+  max-width: 300px;
+}
+
+div.container {
+  margin: 0 6em;
 }
