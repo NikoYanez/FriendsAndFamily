@@ -37,7 +37,6 @@
    </div>
  </div>
 </nav>
-<div class="container">
 
 <p id="notice"><%= notice %></p>
 
@@ -47,13 +46,13 @@
 <!-- <h3 class="titles">Title</h3> -->
 <h3 class="titles">Miami</h3>
 <!-- <th colspan="3"></th> -->
+<div class="container">
 
-<div class="row">
+<div class="gallery-container">
 
 
   <% @pictures.each_with_index do |picture, index| %>
 
-  <div class="col-md-3">
 
     <!-- <p class="titles picture-title"><%= picture.title %></p> -->
     <div class="picture-box">
@@ -61,16 +60,15 @@
       <%= image_tag picture.url %>
       <% end %>
     </div>
-    <div id="buttons">
+    <!-- <div id="buttons">
       <ul>
         <li><%= link_to 'Show', picture, class:'btn btn-default' %></li>
         <li><%= link_to 'Edit', edit_picture_path(picture), class:'btn btn-default' %></li>
         <li><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></li>
       </ul>
-    </div>
-  </div>
+    </div> -->
   <% if (index = 1) % 4 == 0 %>
-</div><div class="row">
+</div>
   <% end %>
   <!-- <td><%= link_to 'Show', picture, class:'btn btn-default' %></td>
   <td><%= link_to 'Edit', edit_picture_path(picture), class:'btn btn-default' %></td>
