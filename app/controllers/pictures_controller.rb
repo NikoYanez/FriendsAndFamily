@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_new_picture, only: [:index, :new]
   # GET /pictures
   # GET /pictures.json
   def index
@@ -14,7 +14,6 @@ class PicturesController < ApplicationController
 
   # GET /pictures/new
   def new
-    @picture = Picture.new
   end
 
   # GET /pictures/1/edit
@@ -28,7 +27,7 @@ class PicturesController < ApplicationController
 
     respond_to do |format|
       if @picture.save
-        format.html { redirect_to @picture, notice: 'Picture was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Picture was successfully created.' }
         format.json { render :show, status: :created, location: @picture }
       else
         format.html { render :new }
@@ -65,6 +64,10 @@ class PicturesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_picture
       @picture = Picture.find(params[:id])
+    end
+
+    def set_new_picture
+      @picture = Picture.new
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

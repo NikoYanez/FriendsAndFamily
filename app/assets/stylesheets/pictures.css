@@ -90,14 +90,21 @@ label {
   flex-wrap: wrap;
   align-items: center;
   align-content: flex-start;
+  justify-content: space-around;
 }
 
 .picture-box {
   max-height: 200px;
   max-width: 300px;
-  background-color: white;
+  margin-top: 1em;
 }
 
 div.container {
   margin: 0 6em;
+}
+
+input {
+  color: white;
+  border: none;
+  background: #2d6ba0;
 }
