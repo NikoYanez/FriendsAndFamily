@@ -103,8 +103,19 @@ div.container {
   margin: 0 6em;
 }
 
-input {
+.field label {
+  color: black;
+  display: block;
+}
+
+#submit-btn {
   color: white;
   border: none;
   background: #2d6ba0;
+}
+
+.picture-box{
+  -moz-box-shadow:    3px 3px 5px 5px black;
+  -webkit-box-shadow: 3px 3px 5px 5px black;
+  box-shadow:         3px 3px 5px 5px black;
 }
